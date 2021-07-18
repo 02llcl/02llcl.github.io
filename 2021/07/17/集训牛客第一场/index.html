@@ -32,8 +32,12 @@
 <meta property="og:image" content="https://i.loli.net/2021/07/18/HqDfOyS6lNc5x37.png">
 <meta property="og:image" content="https://i.loli.net/2021/07/18/HV7uP4iOgSNrLIy.png">
 <meta property="og:image" content="https://i.loli.net/2021/07/18/vzFmPdsrTl5h6o7.png">
+<meta property="og:image" content="https://i.loli.net/2021/07/18/dXYvjlnKPgQAD3L.png">
+<meta property="og:image" content="https://i.loli.net/2021/07/18/ByAnwr8fWQ71sxS.png">
+<meta property="og:image" content="https://i.loli.net/2021/07/18/PENuIFWgvy8DfCQ.png">
+<meta property="og:image" content="https://i.loli.net/2021/07/18/mZ9zDifvIw6NsUH.png">
 <meta property="article:published_time" content="2021-07-17T12:28:37.000Z">
-<meta property="article:modified_time" content="2021-07-18T06:44:41.503Z">
+<meta property="article:modified_time" content="2021-07-18T08:01:57.705Z">
 <meta property="article:author" content="李长乐">
 <meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary">
@@ -207,7 +211,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-18 14:44:41" itemprop="dateModified" datetime="2021-07-18T14:44:41+08:00">2021-07-18</time>
+                <time title="修改时间：2021-07-18 16:01:57" itemprop="dateModified" datetime="2021-07-18T16:01:57+08:00">2021-07-18</time>
               </span>
 
           
@@ -253,7 +257,25 @@
 <p>(中间没注意输入的格式,以为有空格的输入,浪费了五分钟调试,以后得注意)</p>
 <p>关键计算代码</p>
 <p><img src="https://i.loli.net/2021/07/18/vzFmPdsrTl5h6o7.png" alt="image.png"></p>
-<h3 id="E题"><a href="#E题" class="headerlink" title="E题"></a>E题</h3>
+<h3 id="E题"><a href="#E题" class="headerlink" title="E题"></a>E题</h3><p><img src="https://i.loli.net/2021/07/18/dXYvjlnKPgQAD3L.png" alt="image.png"></p>
+<p>广搜,因为每个水管的形状不同,即使旋转只有几个方向可以选择,暂时不会..</p>
+<p>记忆化路程选取</p>
+<h3 id="F题"><a href="#F题" class="headerlink" title="F题"></a>F题</h3><p><img src="https://i.loli.net/2021/07/18/ByAnwr8fWQ71sxS.png" alt="image.png"></p>
+<p>输入为一个字符串(前导零0也可以),要找L到R范围内满足存在各个数存在一个子串求余3为0</p>
+<p>根据题目L与R的范围为10的18次方</p>
+<p>分析复杂度即可猜测应该存在规律计算</p>
+<p>由<strong>定理</strong>一个数各个位置求余的总和如果也是3的倍数,这个数是三的倍数</p>
+<p>每一位求余三只能为0 1 2.任意三位连续的0 1 2的总都为三的倍数,故大于100的数中总是满足的</p>
+<p>由于存在前导零我用字符串输入再转换成自然数</p>
+<font face="黑体" size=5>
+
+<p>当时没注意l,r习惯跟长度l放在一块清0,不小心将longlong重新定义为int然后白白wa了两发</p>
+</font>
+
+<p><img src="https://i.loli.net/2021/07/18/PENuIFWgvy8DfCQ.png" alt="image.png"></p>
+<p>然后根据L,R的大小分段讨论即可累加,其中work函数为判断一个二位数以内是否存在的函数</p>
+<p><img src="https://i.loli.net/2021/07/18/mZ9zDifvIw6NsUH.png" alt="image.png"></p>
+<h3 id="G题"><a href="#G题" class="headerlink" title="G题"></a>G题</h3>
     </div>
 
     
@@ -350,7 +372,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">A题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B%E9%A2%98"><span class="nav-number">1.2.</span> <span class="nav-text">B题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C%E9%A2%98"><span class="nav-number">1.3.</span> <span class="nav-text">C题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#D%E9%A2%98"><span class="nav-number">1.4.</span> <span class="nav-text">D题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#E%E9%A2%98"><span class="nav-number">1.5.</span> <span class="nav-text">E题</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">A题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B%E9%A2%98"><span class="nav-number">1.2.</span> <span class="nav-text">B题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C%E9%A2%98"><span class="nav-number">1.3.</span> <span class="nav-text">C题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#D%E9%A2%98"><span class="nav-number">1.4.</span> <span class="nav-text">D题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#E%E9%A2%98"><span class="nav-number">1.5.</span> <span class="nav-text">E题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#F%E9%A2%98"><span class="nav-number">1.6.</span> <span class="nav-text">F题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#G%E9%A2%98"><span class="nav-number">1.7.</span> <span class="nav-text">G题</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
