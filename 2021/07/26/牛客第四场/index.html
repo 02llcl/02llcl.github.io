@@ -20,32 +20,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="前言 暑假第一场集训结果还是满意的,虽然这英文题看得是真的累啊太难为我了 这次比赛我A了D,E两题签到然后就直接去看A题的博弈了,可惜罚坐三个多小时还是没出来 好在fn 在最后十分钟暴力+神奇优化过了个H.">
+  <meta name="description" content="前言这次一共四个签到题,都签到完了不过错误次数有点多,开头卡在F题题意没懂, 白白wa了两发,J题读懂化简题目,可这最大平均子序列我自己写过都忘记了..">
 <meta property="og:type" content="article">
-<meta property="og:title" content="暑假集训牛客第一场">
-<meta property="og:url" content="http://example.com/2021/07/17/%E9%9B%86%E8%AE%AD%E7%89%9B%E5%AE%A2%E7%AC%AC%E4%B8%80%E5%9C%BA/index.html">
+<meta property="og:title" content="暑假集训牛客第四场">
+<meta property="og:url" content="http://example.com/2021/07/26/%E7%89%9B%E5%AE%A2%E7%AC%AC%E5%9B%9B%E5%9C%BA/index.html">
 <meta property="og:site_name" content="02llcl&#39;s blog">
-<meta property="og:description" content="前言 暑假第一场集训结果还是满意的,虽然这英文题看得是真的累啊太难为我了 这次比赛我A了D,E两题签到然后就直接去看A题的博弈了,可惜罚坐三个多小时还是没出来 好在fn 在最后十分钟暴力+神奇优化过了个H.">
+<meta property="og:description" content="前言这次一共四个签到题,都签到完了不过错误次数有点多,开头卡在F题题意没懂, 白白wa了两发,J题读懂化简题目,可这最大平均子序列我自己写过都忘记了..">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://i.loli.net/2021/07/18/Uj2EimWTcatqwBA.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/18/hMkgf9QeoztD3WE.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/18/HqDfOyS6lNc5x37.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/18/HV7uP4iOgSNrLIy.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/18/vzFmPdsrTl5h6o7.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/18/dXYvjlnKPgQAD3L.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/18/ByAnwr8fWQ71sxS.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/18/PENuIFWgvy8DfCQ.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/18/mZ9zDifvIw6NsUH.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/18/QKeB2zONZphlGIm.png">
-<meta property="og:image" content="https://i.loli.net/2021/07/18/Q8f1nCtgLYE7lVv.png">
-<meta property="article:published_time" content="2021-07-17T12:28:37.000Z">
-<meta property="article:modified_time" content="2021-07-18T13:17:40.471Z">
+<meta property="og:image" content="https://i.loli.net/2021/07/27/y86P2AsJSN9bjkt.png">
+<meta property="article:published_time" content="2021-07-26T13:30:17.800Z">
+<meta property="article:modified_time" content="2021-07-27T16:01:38.765Z">
 <meta property="article:author" content="李长乐">
-<meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2021/07/18/Uj2EimWTcatqwBA.png">
+<meta name="twitter:image" content="https://i.loli.net/2021/07/27/y86P2AsJSN9bjkt.png">
 
-<link rel="canonical" href="http://example.com/2021/07/17/%E9%9B%86%E8%AE%AD%E7%89%9B%E5%AE%A2%E7%AC%AC%E4%B8%80%E5%9C%BA/">
+<link rel="canonical" href="http://example.com/2021/07/26/%E7%89%9B%E5%AE%A2%E7%AC%AC%E5%9B%9B%E5%9C%BA/">
 
 
 <script id="page-configurations">
@@ -58,7 +47,7 @@
   };
 </script>
 
-  <title>暑假集训牛客第一场 | 02llcl's blog</title>
+  <title>暑假集训牛客第四场 | 02llcl's blog</title>
   
 
 
@@ -183,7 +172,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/17/%E9%9B%86%E8%AE%AD%E7%89%9B%E5%AE%A2%E7%AC%AC%E4%B8%80%E5%9C%BA/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/26/%E7%89%9B%E5%AE%A2%E7%AC%AC%E5%9B%9B%E5%9C%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -196,7 +185,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          暑假集训牛客第一场
+          暑假集训牛客第四场
         </h1>
 
         <div class="post-meta">
@@ -206,14 +195,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-07-17 20:28:37" itemprop="dateCreated datePublished" datetime="2021-07-17T20:28:37+08:00">2021-07-17</time>
+              <time title="创建时间：2021-07-26 21:30:17" itemprop="dateCreated datePublished" datetime="2021-07-26T21:30:17+08:00">2021-07-26</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-18 21:17:40" itemprop="dateModified" datetime="2021-07-18T21:17:40+08:00">2021-07-18</time>
+                <time title="修改时间：2021-07-28 00:01:38" itemprop="dateModified" datetime="2021-07-28T00:01:38+08:00">2021-07-28</time>
               </span>
 
           
@@ -234,71 +223,31 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><img src="https://i.loli.net/2021/07/18/Uj2EimWTcatqwBA.png" alt="image.png"></p>
-<p><strong>暑假第一场集训结果还是满意的,虽然这英文题看得是真的累啊太难为我了</strong></p>
-<p>这次比赛我A了D,E两题签到然后就直接去看A题的博弈了,可惜罚坐三个多小时还是没出来</p>
-<p>好在fn 在最后十分钟暴力+神奇优化过了个H.</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这次一共四个签到题,都签到完了不过错误次数有点多,开头卡在F题题意没懂,</p>
+<p>白白wa了两发,J题读懂化简题目,可这最大平均子序列我自己写过都忘记了..</p>
 <span id="more"></span>
 
-<h3 id="A题"><a href="#A题" class="headerlink" title="A题"></a>A题</h3><img src="https://i.loli.net/2021/07/18/hMkgf9QeoztD3WE.png" alt="image.png" style="zoom: 80%;" />
-
-<p>当时看题觉得范围N&lt;=5000,应该不难,然后模拟了前15×15发现想歪了,补了题解才知道可以直接</p>
-<p>暴力打表…麻了</p>
-<p>利用sg函数性质:一个情况假如无法到达先手必输的点则这个点为先手必赢,如果可以达到,则其先手</p>
-<p>必输.题目中s为&gt;=0,故可以拿取0个,则每个行或者列中最多只有一个必输点.利用四重for循环直接模拟</p>
-<p>即可</p>
-<p><img src="https://i.loli.net/2021/07/18/HqDfOyS6lNc5x37.png" alt="image.png" style="zoom:80%;" />)</p>
-<h3 id="B题"><a href="#B题" class="headerlink" title="B题"></a>B题</h3><p>输入一个球的半径,和梯形的上下底,高度</p>
-<p>判断其是否会卡住</p>
-<p>只需判断下底是否长,不够长则一定会卡住</p>
-<p>接着利用相似三角形即可得到结果</p>
-<h3 id="C题"><a href="#C题" class="headerlink" title="C题"></a>C题</h3><p>(不会)</p>
-<h3 id="D题"><a href="#D题" class="headerlink" title="D题"></a>D题</h3><img src="https://i.loli.net/2021/07/18/HV7uP4iOgSNrLIy.png" alt="image.png" style="zoom: 80%;" />
-
-<p>签到题,由于第二个矩阵为1行,且不可以翻转,故直接for循环遍历每一行即可</p>
-<p>每连续的0便计数,若是超过1*m矩阵的长度x,则这段距离可以放进x+1个</p>
-<p>累加即可得到结果</p>
-<p>(中间没注意输入的格式,以为有空格的输入,浪费了五分钟调试,以后得注意)</p>
-<p>关键计算代码</p>
-<img src="https://i.loli.net/2021/07/18/vzFmPdsrTl5h6o7.png" alt="image.png" style="zoom:80%;" />
-
-
-
-<h3 id="E题"><a href="#E题" class="headerlink" title="E题"></a>E题</h3><img src="https://i.loli.net/2021/07/18/dXYvjlnKPgQAD3L.png" alt="image.png" style="zoom:80%;" />
-
-<p>广搜,因为每个水管的形状不同,即使旋转只有几个方向可以选择,暂时不会..</p>
-<p>记忆化路程选取</p>
-<h3 id="F题"><a href="#F题" class="headerlink" title="F题"></a>F题</h3><p><img src="https://i.loli.net/2021/07/18/ByAnwr8fWQ71sxS.png" alt="image.png"></p>
-<p>输入为一个字符串(前导零0也可以),要找L到R范围内满足存在各个数存在一个子串求余3为0</p>
-<p>根据题目L与R的范围为10的18次方</p>
-<p>分析复杂度即可猜测应该存在规律计算</p>
-<p>由<strong>定理</strong>一个数各个位置求余的总和如果也是3的倍数,这个数是三的倍数</p>
-<p>每一位求余三只能为0 1 2.任意三位连续的0 1 2的总都为三的倍数,故大于100的数中总是满足的</p>
-<p>由于存在前导零我用字符串输入再转换成自然数</p>
-<font face="黑体" size=5>
-
-<p>当时没注意l,r习惯跟长度l放在一块清0,不小心将longlong重新定义为int然后白白wa了两发</p>
-</font>
-
-<img src="https://i.loli.net/2021/07/18/PENuIFWgvy8DfCQ.png" alt="image.png" style="zoom: 80%;" />
-
-<p>然后根据L,R的大小分段讨论即可累加,其中work函数为判断一个二位数以内是否存在的函数</p>
-<img src="https://i.loli.net/2021/07/18/mZ9zDifvIw6NsUH.png" alt="image.png" style="zoom:80%;" />
-
-
-
-
-
-<h3 id="G题"><a href="#G题" class="headerlink" title="G题"></a>G题</h3><img src="https://i.loli.net/2021/07/18/QKeB2zONZphlGIm.png" alt="image.png" style="zoom: 67%;" />
-
-<p>比赛的时候没开这题,看了一下直播讲解懂了一些每个数差值默认是上减下,也就是上面分配一个正号</p>
-<p>下面分配负号.交换也可以让下面为正号,上面为负号.便可以按照这样分配正负号找到最佳结果</p>
-<p>即让A,B数组中最大的k个数分配正号,最小的k个数分配负号</p>
-<p>题目要求需要恰好k步,但是当n&gt;2时存在超过2个正负号,只需在这里不断来回交换即可,所以小于k次达到</p>
-<p>的最优解和k次达到的最优解一样不影响结果.</p>
-<p>交换后结果应该加上其绝对值差的两倍</p>
-<p>代码:</p>
-<img src="https://i.loli.net/2021/07/18/Q8f1nCtgLYE7lVv.png" alt="image.png" style="zoom: 67%;" />
+<h3 id="C-LCS"><a href="#C-LCS" class="headerlink" title="C.LCS"></a>C.LCS</h3><p><a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/11255/C">题目链接</a></p>
+<p>给定你三个字符串的长度,及两两之间相同字符的数量</p>
+<p>分别为a,b,c,n</p>
+<p>思路:</p>
+<p>容易得到证明当前a,b,c中的两个较大值减去最小值大于等于n时存在</p>
+<p>接着可以进行模拟得到字符串</p>
+<p>(先放最小的,再放次小,接着放最大的即可)</p>
+<h3 id="F-Just-a-joke"><a href="#F-Just-a-joke" class="headerlink" title="F.Just a joke"></a>F.Just a joke</h3><p>[题目链接](<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/11255/F">F-Just a joke_2021牛客暑期多校训练营4 (nowcoder.com)</a>)</p>
+<p>当时被这道题卡了有点久,主要是题目中第二种操作到底是怎么删没看太懂</p>
+<p>还是英文太差了.</p>
+<p>由题解知道:第二种操作是能删点和线,也就是k个点和k-1个线</p>
+<p>第一种和第二种操作都是减少奇数,故答案只跟n+m的奇偶有关</p>
+<h3 id="J-Average"><a href="#J-Average" class="headerlink" title="J. Average"></a>J. Average</h3><p>[题目链接](<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/11255/J">J-Average_2021牛客暑期多校训练营4 (nowcoder.com)</a>)</p>
+<p>给你两个序列a,b及其中的权值,根据Wi,j=ai+bj.可以得到一个边长为n*m的矩阵W</p>
+<p>要得到平均值最大的一个矩阵行数大于x,列数大于y</p>
+<p>根据式子化简可知要求a,b的最大平均子序列.</p>
+<p><img src="https://i.loli.net/2021/07/27/y86P2AsJSN9bjkt.png" alt="image.png"></p>
+<h3 id="I-Inverse-Pair"><a href="#I-Inverse-Pair" class="headerlink" title="I. Inverse Pair"></a>I. Inverse Pair</h3><p>[题目链接](<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/contest/11255/I">I-Inverse Pair_2021牛客暑期多校训练营4 (nowcoder.com)</a>)</p>
+<p>题目大意:</p>
+<p>给定一个序列长度n,和权值ai,你可以给其中任意几个数加上1,使加上后其中的逆序对最少</p>
+<p>只要在输入的时候记录下个数即可,总数减去可以减少的数量得到答案</p>
 
     </div>
 
@@ -314,7 +263,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://example.com/2021/07/17/%E9%9B%86%E8%AE%AD%E7%89%9B%E5%AE%A2%E7%AC%AC%E4%B8%80%E5%9C%BA/" title="暑假集训牛客第一场">http://example.com/2021/07/17/集训牛客第一场/</a>
+    <a href="http://example.com/2021/07/26/%E7%89%9B%E5%AE%A2%E7%AC%AC%E5%9B%9B%E5%9C%BA/" title="暑假集训牛客第四场">http://example.com/2021/07/26/牛客第四场/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -324,9 +273,6 @@
 
 
       <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag"># 题解</a>
-          </div>
 
         
 
@@ -334,13 +280,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/07/15/%E4%BA%8C%E7%BB%B4%E5%89%8D%E7%BC%80%E5%92%8C/" rel="prev" title="二维前缀和">
-      <i class="fa fa-chevron-left"></i> 二维前缀和
+    <a href="/2021/07/24/%E7%89%9B%E5%AE%A2%E7%AC%AC%E4%B8%89%E5%9C%BA/" rel="prev" title="暑假集训牛客第三场">
+      <i class="fa fa-chevron-left"></i> 暑假集训牛客第三场
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/07/20/%E7%89%9B%E5%AE%A2%E7%AC%AC%E4%BA%8C%E5%9C%BA/" rel="next" title="暑假集训牛客第二场">
-      暑假集训牛客第二场 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -399,7 +342,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">A题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B%E9%A2%98"><span class="nav-number">1.2.</span> <span class="nav-text">B题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C%E9%A2%98"><span class="nav-number">1.3.</span> <span class="nav-text">C题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#D%E9%A2%98"><span class="nav-number">1.4.</span> <span class="nav-text">D题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#E%E9%A2%98"><span class="nav-number">1.5.</span> <span class="nav-text">E题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#F%E9%A2%98"><span class="nav-number">1.6.</span> <span class="nav-text">F题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#G%E9%A2%98"><span class="nav-number">1.7.</span> <span class="nav-text">G题</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#C-LCS"><span class="nav-number">1.1.</span> <span class="nav-text">C.LCS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#F-Just-a-joke"><span class="nav-number">1.2.</span> <span class="nav-text">F.Just a joke</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#J-Average"><span class="nav-number">1.3.</span> <span class="nav-text">J. Average</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#I-Inverse-Pair"><span class="nav-number">1.4.</span> <span class="nav-text">I. Inverse Pair</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
