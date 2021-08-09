@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>暑假集训牛客第七场</title>
+      <link href="/2021/08/08/%E7%89%9B%E5%AE%A2%E7%AC%AC%E4%B8%83%E5%9C%BA/"/>
+      <url>/2021/08/08/%E7%89%9B%E5%AE%A2%E7%AC%AC%E4%B8%83%E5%9C%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这次比赛难度排名存靠签到))</p><p>pyf大佬带飞,难度差距有点大</p><span id="more"></span><p>&nbsp;&nbsp;</p><h3 id="I-xay-loves-or"><a href="#I-xay-loves-or" class="headerlink" title="I xay loves or"></a>I xay loves or</h3><p><a href="https://ac.nowcoder.com/acm/contest/11258/I">题目链接</a></p><p>签到题,看到or的时候就想到二进制,根据或的规则,判断各个位置</p><p>上的对应0,1即可,只有两个均为1的时候乘2.</p><p>题目翻译的时候漏注意了正整数第一次就wa了</p><p>只需特判(x==s)即可知道存不存在0</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(x&gt;<span class="number">0</span>||s&gt;<span class="number">0</span>) &#123;</span><br><span class="line">   <span class="keyword">if</span>(s&amp;<span class="number">1</span>) &#123;</span><br><span class="line">     <span class="keyword">if</span>(x&amp;<span class="number">1</span>) &#123;</span><br><span class="line">       ans&lt;&lt;=<span class="number">1</span>;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125; <span class="keyword">else</span>&#123;</span><br><span class="line">     <span class="keyword">if</span>(x&amp;<span class="number">1</span>) &#123;</span><br><span class="line">       <span class="built_in">printf</span>(<span class="string">&quot;0&quot;</span>);</span><br><span class="line">       <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   x&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">   s&gt;&gt;=<span class="number">1</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure><p>&nbsp;</p><p>&nbsp;&nbsp;</p><h3 id="H-xay-loves-count"><a href="#H-xay-loves-count" class="headerlink" title="H xay loves count"></a>H xay loves count</h3><p><a href="https://ac.nowcoder.com/acm/contest/11258/H">题目链接</a></p><p>在一个队列中,寻找满足ai*ay=ak的个数</p><p>i,j,k可以改变顺序,可以相等</p><p>直接通过枚举双重for循环即可得到结果</p><p>通过桶排可以直接确定ak是否存在</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 2021暑假集训 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>快速幂模板</title>
+      <link href="/2021/08/07/%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
+      <url>/2021/08/07/%E5%BF%AB%E9%80%9F%E5%B9%82/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>快速幂的使用可以快速计算n次方的结果</p><p>只需要O(logn)即可</p><p>&nbsp;<span id="more"></span></p><p>&nbsp;</p><h2 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">fastPower</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> base, <span class="keyword">long</span> <span class="keyword">long</span> power)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> result = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span> (power &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (power &amp; <span class="number">1</span>) &#123;<span class="comment">//此处等价于if(power%2==1)</span></span><br><span class="line">            result = result * base % <span class="number">1000</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        power &gt;&gt;= <span class="number">1</span>;<span class="comment">//此处等价于power=power/2</span></span><br><span class="line">        base = (base * base) % <span class="number">1000</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>暑假集训杭电第六场</title>
       <link href="/2021/08/06/%E6%9D%AD%E7%94%B5%E7%AC%AC%E5%85%AD%E5%9C%BA/"/>
       <url>/2021/08/06/%E6%9D%AD%E7%94%B5%E7%AC%AC%E5%85%AD%E5%9C%BA/</url>
