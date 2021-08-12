@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>暑假集训杭电第七场</title>
+      <link href="/2021/08/11/%E6%9D%AD%E7%94%B5%E7%AC%AC%E4%B8%83%E5%9C%BA/"/>
+      <url>/2021/08/11/%E6%9D%AD%E7%94%B5%E7%AC%AC%E4%B8%83%E5%9C%BA/</url>
+      
+        <content type="html"><![CDATA[<span id="more"></span><h3 id="1003-Fall-with-Trees"><a href="#1003-Fall-with-Trees" class="headerlink" title="1003 Fall with Trees"></a>1003 Fall with Trees</h3><p><a href="https://acm.hdu.edu.cn/contests/contest_showproblem.php?pid=1003&cid=990">题目链接</a></p><p>给定一个完全二叉树的形态求围成的面积</p><p>二叉树满足,父节点的横坐标为子节点的和的一半</p><p>推出每一层节点的长度套用O(1)的公式即可</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">fastPower</span><span class="params">(<span class="keyword">double</span> base, <span class="keyword">long</span> <span class="keyword">long</span> power)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">double</span> result = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span> (power &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (power &amp; <span class="number">1</span>) &#123;</span><br><span class="line">            result = result * base;</span><br><span class="line">        &#125;</span><br><span class="line">        power &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">        base = base * base;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;<span class="comment">//快速幂,不然会超时</span></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">getsum</span><span class="params">(<span class="keyword">int</span> k,<span class="keyword">double</span> d)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> ss=<span class="number">4</span>*d*k<span class="number">-4</span>*d+<span class="number">4</span>*d*<span class="built_in">fastPower</span>(<span class="number">0.5</span>,k);</span><br><span class="line">   <span class="comment">// cout&lt;&lt;ss&lt;&lt;&quot;   !&quot;&lt;&lt;endl;</span></span><br><span class="line">    <span class="keyword">return</span> ss;</span><br><span class="line">&#125;<span class="comment">//得到第n行</span></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">work</span><span class="params">(<span class="keyword">double</span> h,<span class="keyword">double</span> d,<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">     <span class="keyword">double</span> d1=<span class="number">2</span>*d;</span><br><span class="line">     <span class="keyword">double</span> s=<span class="built_in">getsum</span>(k,d)+<span class="built_in">getsum</span>(k<span class="number">-1</span>,d)-d1;</span><br><span class="line">     s=s*h*<span class="number">1.0</span>/<span class="number">2</span>;</span><br><span class="line">     <span class="keyword">return</span> s;</span><br><span class="line">&#125;<span class="comment">//求答案</span></span><br></pre></td></tr></table></figure><p>&nbsp;</p><h3 id="1007-Link-with-Limit"><a href="#1007-Link-with-Limit" class="headerlink" title="1007 Link with Limit"></a>1007 Link with Limit</h3><p><a href="https://acm.hdu.edu.cn/contests/contest_showproblem.php?pid=1007&cid=990">题目链接</a></p><p>看似是数论,其实是一个图的建立,并其中的所有 环绝对值大小相等</p><p>&nbsp;&nbsp;</p><h3 id="1008-Smzzl-with-Greedy-Snake"><a href="#1008-Smzzl-with-Greedy-Snake" class="headerlink" title="1008 Smzzl with Greedy Snake"></a>1008 Smzzl with Greedy Snake</h3><p><a href="https://acm.hdu.edu.cn/contests/contest_showproblem.php?pid=1008&cid=990">题目链接</a></p><p>大模拟即可</p><p>&nbsp;&nbsp;</p><h3 id="1010-Smzzl-with-Tropical-Taste"><a href="#1010-Smzzl-with-Tropical-Taste" class="headerlink" title="1010  Smzzl with Tropical Taste"></a>1010  Smzzl with Tropical Taste</h3><p><a href="https://acm.hdu.edu.cn/contests/contest_showproblem.php?pid=1010&cid=990">题目链接</a></p><p>签到题</p><p>直接判断大小即可</p><p>&nbsp;&nbsp;</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 2021暑假集训 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>暑假集训牛客第八场</title>
+      <link href="/2021/08/10/%E7%89%9B%E5%AE%A2%E7%AC%AC%E5%85%AB%E5%9C%BA/"/>
+      <url>/2021/08/10/%E7%89%9B%E5%AE%A2%E7%AC%AC%E5%85%AB%E5%9C%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>暴力出奇迹+阅读理解</p><p><img src="https://i.loli.net/2021/08/10/tYUsJgSuBDjahel.png" alt="image.png"></p><span id="more"></span><p>&nbsp;</p><h3 id="A-Ares-Toilet-Ares"><a href="#A-Ares-Toilet-Ares" class="headerlink" title="A Ares, Toilet Ares"></a>A Ares, Toilet Ares</h3><p><a href="https://ac.nowcoder.com/acm/contest/11259/A">题目链接</a></p><p>阅读理解题,题目意思太难看懂了</p><p>后面看懂了发现就直接求逆元模板即可</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a=a*y%MOD;</span><br><span class="line">b=b*z%MOD;</span><br></pre></td></tr></table></figure><p><strong>一定要记得多求mod</strong></p><p>白wa好几发</p><p>&nbsp;</p><h3 id="E-Rise-of-Shadows"><a href="#E-Rise-of-Shadows" class="headerlink" title="E Rise of Shadows"></a>E Rise of Shadows</h3><p><a href="https://ac.nowcoder.com/acm/contest/11259/E">题目链接</a></p><p>签到题</p><p>开始想复杂了,质数一定也不是闰年直接输出no即可</p><p>&nbsp;</p><h3 id="K-Yet-Another-Problem-About-Pi"><a href="#K-Yet-Another-Problem-About-Pi" class="headerlink" title="K Yet Another Problem About Pi"></a>K Yet Another Problem About Pi</h3><p><a href="https://ac.nowcoder.com/acm/contest/11259/K">题目链接</a></p><p>一个长度为Π的线段最多经过几个格子</p><p>给定每个格子的长宽,易知只有斜线和走较小边有性价比</p><p>最开始想写背包的发现不得行</p><p>令 a=min{w,d}，b=√(w^2+d^2 )</p><p>算法无非是对 ax+by&lt;=pi 的非负解求 2x+3y 的最大值。</p><p>不难发现，<strong>x&lt;3 与 y&lt;2 至少有一成立</strong>，枚举后除法求解即可，注意精度问题。只需要枚举x&lt;3和y&lt;2即可</p><p>&nbsp;</p><h3 id="D-OR"><a href="#D-OR" class="headerlink" title="D OR"></a>D OR</h3><p><a href="https://ac.nowcoder.com/acm/contest/11259/D">题目链接</a></p><p>题意:给定两个数字b和c,满足:</p><p>bi=ai−1orai, ci=ai−1+ai</p><p>根据给定的数,输出a数组的可能性</p><p>分析:当时只想到枚举,没想到题解也是枚举不过要进行分开枚举</p><p>不过可以利用</p><p><img src="https://i.loli.net/2021/08/11/HkViWY2j4obqSGp.png" alt="image.png"></p><p>对第一个数二进制每一位进行枚举即可</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 2021暑假集训 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>暑假集训牛客第七场</title>
       <link href="/2021/08/08/%E7%89%9B%E5%AE%A2%E7%AC%AC%E4%B8%83%E5%9C%BA/"/>
       <url>/2021/08/08/%E7%89%9B%E5%AE%A2%E7%AC%AC%E4%B8%83%E5%9C%BA/</url>
