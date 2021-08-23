@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>暑假集训杭电第十场</title>
+      <link href="/2021/08/21/%E6%9D%AD%E7%94%B5%E7%AC%AC%E5%8D%81%E5%9C%BA/"/>
+      <url>/2021/08/21/%E6%9D%AD%E7%94%B5%E7%AC%AC%E5%8D%81%E5%9C%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>爆零++;</p><span id="more"></span><p>&nbsp;</p><h3 id="1003-Pty-loves-lines"><a href="#1003-Pty-loves-lines" class="headerlink" title="1003 Pty loves lines"></a>1003 Pty loves lines</h3><p><a href="https://acm.hdu.edu.cn/contests/contest_showproblem.php?pid=1003&cid=993">题目链接</a></p><p>大意:</p><p>大概可以看成一个背包问题用d(i)(j)表示i个点能否形成j个交点</p><p>然后进行背包dp放置即可</p><p>不过很容易就知道在一秒之内会超时</p><p>通过打表可以知道后面一长条都满足</p><p>所以只需要最多打表35000即可</p><p>利用bitset来优化才能过</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 2021暑假集训 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>暑假集训杭电第九场</title>
       <link href="/2021/08/18/%E6%9D%AD%E7%94%B5%E7%AC%AC%E4%B9%9D%E5%9C%BA/"/>
       <url>/2021/08/18/%E6%9D%AD%E7%94%B5%E7%AC%AC%E4%B9%9D%E5%9C%BA/</url>
